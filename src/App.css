@@ -1,17 +1,31 @@
 .App {
   text-align: center;
-  background-image: url('/public/img/back.png');
-  background-size: cover;
+}
+
+.back1 {
+  background-image: url("/public/img/back-1.png");
+  /* background-size: cover;
   background-repeat: no-repeat;
   height: auto;
-  width: 100%;
+  width: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Ensure the image covers the container */
+  object-fit: cover; /* Ensure the image doesn't stretch */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.absolute-content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
